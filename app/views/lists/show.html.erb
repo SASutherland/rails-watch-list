@@ -9,4 +9,6 @@
 
 <%= link_to "✚ Add a new bookmark", new_bookmark_path, class: "text-decoration-none" %>
 <p>
-<%= link_to "◄ Back", lists_path, class: "text-decoration-none" %>
+<%# <%= link_to "✘ Delete this bookmark", bookmark_path(@bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list?"}, class: 'text-danger' %>
+<p>
+<%= link_to "↻ Back", :back, class: "text-decoration-none" %>
